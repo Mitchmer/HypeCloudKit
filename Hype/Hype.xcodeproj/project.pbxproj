@@ -8,23 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		99783BC62314395D00CEC762 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99783BC52314395D00CEC762 /* AppDelegate.swift */; };
-		99783BC82314395D00CEC762 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99783BC72314395D00CEC762 /* ViewController.swift */; };
 		99783BCB2314395D00CEC762 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99783BC92314395D00CEC762 /* Main.storyboard */; };
 		99783BCD2314395E00CEC762 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99783BCC2314395E00CEC762 /* Assets.xcassets */; };
 		99783BD02314395E00CEC762 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99783BCE2314395E00CEC762 /* LaunchScreen.storyboard */; };
 		99783BDA23143CF300CEC762 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99783BD923143CF300CEC762 /* CloudKit.framework */; };
+		99783BDE231441AF00CEC762 /* HypeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99783BDD231441AF00CEC762 /* HypeTableViewController.swift */; };
+		99783BE12314424700CEC762 /* Hype.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99783BE02314424700CEC762 /* Hype.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		99783BC22314395D00CEC762 /* Hype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hype.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99783BC52314395D00CEC762 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		99783BC72314395D00CEC762 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		99783BCA2314395D00CEC762 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		99783BCC2314395E00CEC762 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		99783BCF2314395E00CEC762 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		99783BD12314395E00CEC762 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		99783BD723143CEE00CEC762 /* Hype.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Hype.entitlements; sourceTree = "<group>"; };
 		99783BD923143CF300CEC762 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		99783BDD231441AF00CEC762 /* HypeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypeTableViewController.swift; sourceTree = "<group>"; };
+		99783BE02314424700CEC762 /* Hype.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hype.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,13 +61,11 @@
 		99783BC42314395D00CEC762 /* Hype */ = {
 			isa = PBXGroup;
 			children = (
+				99783BDF2314423700CEC762 /* Models */,
+				99783BDC2314419500CEC762 /* View Controllers */,
 				99783BD723143CEE00CEC762 /* Hype.entitlements */,
-				99783BC52314395D00CEC762 /* AppDelegate.swift */,
-				99783BC72314395D00CEC762 /* ViewController.swift */,
+				99783BDB2314418100CEC762 /* Resources */,
 				99783BC92314395D00CEC762 /* Main.storyboard */,
-				99783BCC2314395E00CEC762 /* Assets.xcassets */,
-				99783BCE2314395E00CEC762 /* LaunchScreen.storyboard */,
-				99783BD12314395E00CEC762 /* Info.plist */,
 			);
 			path = Hype;
 			sourceTree = "<group>";
@@ -76,6 +76,33 @@
 				99783BD923143CF300CEC762 /* CloudKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		99783BDB2314418100CEC762 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				99783BC52314395D00CEC762 /* AppDelegate.swift */,
+				99783BCC2314395E00CEC762 /* Assets.xcassets */,
+				99783BCE2314395E00CEC762 /* LaunchScreen.storyboard */,
+				99783BD12314395E00CEC762 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		99783BDC2314419500CEC762 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				99783BDD231441AF00CEC762 /* HypeTableViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		99783BDF2314423700CEC762 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				99783BE02314424700CEC762 /* Hype.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,8 +184,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99783BC82314395D00CEC762 /* ViewController.swift in Sources */,
 				99783BC62314395D00CEC762 /* AppDelegate.swift in Sources */,
+				99783BDE231441AF00CEC762 /* HypeTableViewController.swift in Sources */,
+				99783BE12314424700CEC762 /* Hype.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,7 +335,7 @@
 				CODE_SIGN_ENTITLEMENTS = Hype/Hype.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6H38T972U3;
-				INFOPLIST_FILE = Hype/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Hype/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -326,7 +354,7 @@
 				CODE_SIGN_ENTITLEMENTS = Hype/Hype.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6H38T972U3;
-				INFOPLIST_FILE = Hype/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Hype/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
