@@ -14,6 +14,7 @@
 		99783BDA23143CF300CEC762 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99783BD923143CF300CEC762 /* CloudKit.framework */; };
 		99783BDE231441AF00CEC762 /* HypeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99783BDD231441AF00CEC762 /* HypeTableViewController.swift */; };
 		99783BE12314424700CEC762 /* Hype.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99783BE02314424700CEC762 /* Hype.swift */; };
+		99783BE423144A9C00CEC762 /* HypeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99783BE323144A9C00CEC762 /* HypeController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		99783BD923143CF300CEC762 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		99783BDD231441AF00CEC762 /* HypeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypeTableViewController.swift; sourceTree = "<group>"; };
 		99783BE02314424700CEC762 /* Hype.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hype.swift; sourceTree = "<group>"; };
+		99783BE323144A9C00CEC762 /* HypeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypeController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 		99783BC42314395D00CEC762 /* Hype */ = {
 			isa = PBXGroup;
 			children = (
+				99783BE223144A7F00CEC762 /* Model Controller */,
 				99783BDF2314423700CEC762 /* Models */,
 				99783BDC2314419500CEC762 /* View Controllers */,
 				99783BD723143CEE00CEC762 /* Hype.entitlements */,
@@ -103,6 +106,14 @@
 				99783BE02314424700CEC762 /* Hype.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		99783BE223144A7F00CEC762 /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				99783BE323144A9C00CEC762 /* HypeController.swift */,
+			);
+			path = "Model Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,6 +196,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				99783BC62314395D00CEC762 /* AppDelegate.swift in Sources */,
+				99783BE423144A9C00CEC762 /* HypeController.swift in Sources */,
 				99783BDE231441AF00CEC762 /* HypeTableViewController.swift in Sources */,
 				99783BE12314424700CEC762 /* Hype.swift in Sources */,
 			);

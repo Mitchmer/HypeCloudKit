@@ -49,12 +49,16 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Hype Train" id="izC-F6-NoX">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="hKG-8z-xbK"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="hKG-8z-xbK">
+                            <connections>
+                                <action selector="addButtonTapped:" destination="R3h-ix-0F8" id="HDl-vs-LYH"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CD5-gT-pRp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="969.56521739130437" y="144.64285714285714"/>
+            <point key="canvasLocation" x="112" y="188"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ESf-qB-YtE">
